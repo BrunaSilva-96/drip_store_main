@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* inicio header abaixo */
+
+.container-global {
+  width: 1555.2px;
+  height: 207.36px;
+  color: #ffffff;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.titulo-digitalColleger {
+  color: #c92071;
+  margin-left: 41px;
+  margin-top: 36.72px;
+  justify-content: baseline;
+  align-items: center;
+  display: flex;
+}
+
+.titulo-digitalColleger img {
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.titulo-digitalColleger input {
+  background-color: lightgray;
+  width: 603.72px;
+  height: 64.8px;
+  margin-top: 20px;
+  margin-left: 36.72px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8.64px;
+  opacity: 50%;
+  border: none;
+  align-items: center;
+  padding-right: 40px;
+  font-size: 17.28px;
+}
+
+.titulo-digitalColleger ::placeholder {
+  color: black;
+  padding: 1rem;
+}
+
+#lupa {
+  position: absolute;
+  right: 450px;
+  top: 17%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.titulo-digitalColleger ::placeholder {
+  opacity: 60%;
+}
+
+.barra-navegacao ul {
+  color: #474747;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  font-size: 17.28px;
+  margin-top: 30.24px;
+  margin-left: 36.72px;
+}
+
+.barra-navegacao a {
+  text-decoration: none;
+}
+
+.cad-ent-carrinh {
+  display: flex;
+  gap: 1.2rem;
+  margin-left: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.cad-ent-carrinh img {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cadastrar {
+  text-decoration: line;
+}
+
+.entrar button {
+  background-color: #c92071;
+  width: 123.12px;
+  height: 43.2px;
+  color: #f5f5f5;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.entrar button:hover {
+  background-color: #920d45;
+}
+
+/* Fim do header acima */
+
+/* Inicio da seção coleçoes em destaque */
+
+.global-Colecoes {
+  padding-left: 1.5rem;
+  color: #474747;
+  background-color: #f9f8fe;
+}
+
+.produt-destq {
+  background-color: #f9f8fe;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.global-Colecoes button {
+  background-color: #e7ff86;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  margin: 2rem;
+}
+
+.global-Colecoes p {
+  color: #1f1f1f;
+  font-size: 32px;
+  font-weight: bolder;
+  margin-left: 2rem;
+}
+
+#comprar {
+  color: #c92071;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  width: 153px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  z-index: 2;
+  position: relative;
+}
+
+.camisa {
+  background-color: #d8e3f2;
+  width: 405px;
+  height: 251px;
+  padding-right: 3rem;
+  overflow: visible;
+  z-index: 2;
+  position: relative;
+}
+
+.tenis {
+  background-color: #d8e3f2;
+  width: 405px;
+  height: 251px;
+  padding-right: 3rem;
+  overflow: visible;
+  z-index: 2;
+  position: relative;
+}
+
+.fone {
+  background-color: #d8e3f2;
+  width: 405px;
+  height: 251px;
+  padding-right: 3rem;
+  overflow: visible;
+  z-index: 2;
+  position: relative;
+}
+
+.produt-destq img {
+  rotate: 20.78°;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+}
+
+/* Inicio da parte 2 coleções em destaque */
+
+#titulo-2 {
+  text-align: center;
+}
+
+.global-container-title2 {
+  display: flex;
+  background-color: #f9f8fe;
+  justify-content: center;
+}
+
+.icons {
+  background-color: #f9f8fe;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+  justify-items: center;
+  position: relative;
+}
+
+.icons img {
+  position: relative;
+  left: 17px;
+  top: 17px;
+}
+
+.icon-camiseta {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+
+  padding-left: 2px;
+}
+
+.icon-calca {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+}
+
+.icon-bone {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+}
+
+.icon-fone {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+  padding-left: 5px;
+}
+
+.icon-tenis {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 104px;
+  height: 104px;
+  position: relative;
+}
+
+.icons h6 {
+  font-size: 14px;
+  font-weight: bolder;
+  position: relative;
+  bottom: -50px;
+  right: -20px;
+}
+
+#calca {
+  left: 28px;
+  font-weight: bolder;
+}
+
+#bone {
+  left: 30px;
+  font-weight: bolder;
+}
+
+#phone {
+  left: 12px;
+  font-weight: bolder;
+}
+
+#tenis {
+  left: 33px;
+  font-weight: bolder;
+}
+
+#Bone-Desenho {
+  width: 65px;
+  height: 65px;
+}
