@@ -15,8 +15,18 @@
 
     <div class="container-global">
       <div class="titulo-digitalColleger">
-        <img src="../Assets/logo.png" alt="logo" />
-        <input type="text" placeholder="Pesquisar Produto..." />
+        <img
+          id="img-hamburguer"
+          onclick="toggleMenu()"
+          src="./Assets/toggleMenu.png"
+          alt="menu-toggle"
+        />
+        <img id="logo-responsi" src="./Assets/logo.png" alt="logo" />
+        <input
+          class="respo-logo"
+          type="text"
+          placeholder="Pesquisar Produto..."
+        />
         <img id="lupa" src="./Assets/Search.png" alt="lupa" />
         <div class="cad-ent-carrinh">
           <div class="cadastrar">
@@ -44,65 +54,154 @@
       </div>
     </div>
     <!-- Fim do header acima -->
+    <!-- criar 16 divs  depoois das 5 primeiras divs criar mais um container chamado resumo para ficar lado a lado com as 5 primeiras-->
+    <!-- Inicio da seção finalizar compra abaixo -->
 
-    <!-- Inicio da seção coleçoes em destaque-->
+    <div class="pai-dos-pais">
+      <div class="container-globalFnzCompra">
+        <h1>Finalizar Compra</h1>
+        <div class="container-inputs">
+          <div class="info">
+            <p>Informações Pessoais</p>
+            <br />
+            <hr />
+          </div>
+          <div class="nomeLabel">
+            <p>Nome Completo*</p>
+            <input type="text" placeholder="Insira seu nome" />
+          </div>
+          <div class="nomeLabel">
+            <p>CPF*</p>
+            <input type="text" placeholder="Insira seu CPF" />
+          </div>
+          <div class="nomeLabel">
+            <p>E-mail *</p>
+            <input type="text" placeholder="Insira seu E-mail" />
+          </div>
+          <div class="nomeLabel">
+            <p>Celular*</p>
+            <input type="text" placeholder="Insira seu Celular" />
+          </div>
+        </div>
+        <!-- segunda parte abaixo -->
+        <div class="container-inputs2">
+          <div class="info2">
+            <p>Informações de Entrega</p>
+            <br />
+            <hr />
+          </div>
+          <div class="nomeLabel">
+            <p>Endereço *</p>
+            <input type="text" placeholder="Insira seu endereço" />
+          </div>
+          <div class="nomeLabel">
+            <p>Bairro *</p>
+            <input type="text" placeholder="Insira seu bairro" />
+          </div>
+          <div class="nomeLabel">
+            <p>Cidade *</p>
+            <input type="text" placeholder="Insira sua cidade" />
+          </div>
+          <div class="nomeLabel">
+            <p>CEP *</p>
 
-    <div class="global-Colecoes">
-      <h2>Coleções em destaque</h2>
-      <div class="produt-destq">
-        <div class="camisa">
-          <button>30% OFF</button>
-          <p>
-            Novo drop <br />
-            Supreme
-          </p>
-          <img src="./Assets/Group 53583.png" alt="camisa" />
+            <input type="text" placeholder="Insira seu CEP" />
+          </div>
+          <div class="nomeLabel">
+            <p>Complemento</p>
+            <input type="text" placeholder="Insira complemento" />
+          </div>
         </div>
-        <div class="tenis">
-          <button>30% OFF</button>
-          <p>
-            Coleção <br />
-            Adidas
-          </p>
-          <img src="./Assets/Group 53584.png" alt="tenis" />
+
+        <div class="global-pgmt">
+        <p id="info-pagt">Informações de Pagamento</p>
+        <hr />
+        <div class="container-inputs3">
+          <div class="form-pagmt">
+            <p class="TitleForm">Forma de Pagamento</p>
+            <input type="radio" id="credito" name="pagamento" checked />
+            <label for="credito">Cartão de Crédito</label>
+            <input type="radio" name="pagamento" id="debito" />
+            <label for="Boleto">Boleto Bancário</label>
+          </div>
+          <p class="">Nome do Cartão *</p>
+          <input type="text" placeholder="Insira o nome do Cartão" />
+         
+          <div class="inputMeio">
+            <div class="meio">
+             <p class="">Data o Número do Cartão *</p>
+             <input type="text" placeholder="Insira número do Cartão" />
+            </div>
+            <div class="meio">
+              <p class="">Data de validade do Cartão *</p>
+              <input type="text" placeholder="Insira a validade do Cartão" />
+            </div> 
+          </div>
+          <p class="">CVV *</p>
+          <input type="text" placeholder="CVV *" />
         </div>
-        <div class="fone">
-          <button>30% OFF</button>
-          <p>
-            Novo <br />
-            Beats Bass
-          </p>
-          <img src="./Assets/Group 53585.png" alt="fone" />
-        </div>
-        <div class="icons-destaq"></div>
       </div>
-      <!-- Inicio da parte 2 coleções em destaque -->
-      <h2 id="titulo-2">Coleções em destaque</h2>
+      </div>
 
-      <div class="global-container-title2">
-        <div class="icons">
-          <div class="icon-camiseta">
-            <img src="./Assets/Group 53586.png" alt="icon-camiseta" />
-            <h6>Camisetas</h6>
+      <!-- colar na div acima -->
+      <!-- informaçoes de pagamento abaixo -->
+      <div class="container-resumo">
+        <h2>Resumo</h2>
+        <hr />
+        <div class="tenis2">
+          <img src="./Assets/White-Sneakers-PNG-Clipart 1.png" alt="tenis" />
+          <h5>Tênis Nike Revolution 6 Next Nature <br />Masculino</h5>
+        </div>
+        <hr id="linhaAbaixo" />
+        <div class="Labels-resumo">
+          <span> Subtotal:</span>
+          <span>R$ 219,00</span>
+        </div>
+        <div class="Labels-resumo">
+          <span> Frete: </span>
+          <span> R$ 0,00</span>
+        </div>
+        <div class="Labels-resumo">
+          <span> Desconto: </span>
+          <span> R$ 30,00</span>
+        </div>
+        <div class="Labels-resumo2">
+          <h3><span> Total </span></h3>
+          <div id="preco-tenis">
+            <h3>R$ 219,00</h3>
+
+            <h6>ou 10x de R$ 21,00 sem juros</h6>
           </div>
-          <div class="icon-calca">
-            <img src="./Assets/Group 53586-1.png" alt="calça" />
-            <h6 id="calca">Calças</h6>
-          </div>
-          <div class="icon-bone">
-            <img id="Bone-Desenho" src="./Assets/bone.png" alt="boné" />
-            <h6 id="bone">Bonés</h6>
-          </div>
-          <div class="icon-fone">
-            <img src="./Assets/Group 53586-3.png" alt="headphone" />
-            <h6 id="phone">Headphones</h6>
-          </div>
-          <div class="icon-tenis">
-            <img src="./Assets/Group 53586-4.png" alt="tenis" />
-            <h6 id="tenis">Tênis</h6>
-          </div>
+        </div>
+        <div class="btn-pgm">
+          <button>Realizar Pagamento</button>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- finalizar compra -->
+    <div class="container-fnz-compra">
+      <p class="nomeLabel">Finalizar Compra</p>
+      <br />
+      <hr />
+      <div class="Total">
+        <div id="valor-fnzCompra">
+          <h3>Total</h3>
+
+          <h3 class="number">R$ 219,00</h3>
+        </div>
+        <h6>ou 10x de R$ 21,00 sem juros</h6>
+        <div class="btn-pgm">
+          <button>Realizar Pagamento</button>
         </div>
       </div>
     </div>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-menu").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
