@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+header {
+  background-color: white;
+}
+.logo-tipo {
+  display: flex;
+  width: 172.5px;
+  margin: 20px 0 30px 20px;
+}
+
+.interface {
+  max-width: 1750px;
+  margin: 0 auto;
+}
+
+section {
+  background-image: linear-gradient(to bottom, #b5b6f2, #efefff);
+  height: 100vh;
+  width: 1950px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 165px;
+  align-items: center;
+  padding: 20px;
+  margin-left: 100px;
+}
+section .interface {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+input {
+  width: 523px;
+  height: 60px;
+  background-color: rgb(71, 71, 71, 4%); /* Cinza claro no fundo */
+  color: #666666; /* Cor do texto */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "inter";
+  border: 0;
+  outline: none;
+  padding: 20px;
+}
+
+button {
+  background-color: #c92071;
+  width: 523px;
+  height: 48px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+}
+.formulario h2 {
+  font: bold;
+  font-size: 36px;
+  font-weight: 36px;
+  letter-spacing: 1px;
+}
+#tenis img {
+  width: 540px;
+}
+#tenis {
+  padding: -10px;
+}
+.formulario form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.formulario {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  width: 583px;
+  height: 560px;
+  border-radius: 4px;
+  padding: 30px;
+  gap: 30px;
+}
+label {
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.faca-login {
+  width: 523px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 20px;
+}
+a {
+  color: #474747;
+}
+@media (max-width: 600px) {
+  button {
+    width: 255px;
+    height: 48px;
+    min-width: 0;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .login {
+    width: 255px;
+    height: 89px;
+    margin-top: 118px;
+    margin-left: 0;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 315px; /* largura fixa */
+    height: fit-content; /* altura envolver */
+    max-height: 572px; /* altura máxima */
+    margin-top: 171px; /* margem superior */
+    margin-left: 30px; /* margem esquerda */
+    border-radius: 4px; /* raio */
+    gap: 30px; /* espaçamento entre itens */
+    padding: 30px; /* espaço interno */
+    background-color: white;
+  }
+}
+
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 72px 100px 0px 100px;
+}
+
+.div-container-footer {
+  width: 1240px;
+  height: 312px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 30%);
+}
+
+#titulos-footer {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* seção logo do footer */
+
+.div-logo-redes-sociais-footer {
+  width: 307px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.div-links-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 102px;
+}
+
+.div-logo-footer {
+  width: 253px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div-logo-footer img {
+  width: 33px;
+  height: 33px;
+}
+
+#nome-marca {
+  font-weight: 600;
+  font-size: 36.4px;
+  line-height: 100%;
+  letter-spacing: -1%;
+}
+
+.div-drescricao-marca-footer {
+  width: 307px;
+  height: 78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+.div-redes-sociais-footer {
+  width: 124.12px;
+  height: 20.53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* seção links de informações */
+
+.div-informacao-footer {
+  width: 135px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+/* seção links de categorias */
+
+.div-categorias-footer {
+  width: 96px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+/* seção informações de contato */
+
+.div-contato-footer {
+  width: 233px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+.div-conteudo-contato-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.div-conteudo-contato-footer p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+/* estilização diretamente nas tags*/
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li a {
+  text-decoration: none;
+  white-space: nowrap; /*apliquei a propriedade para que os textos dentro dos links não quebrassem a linha automaticamente*/
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0%;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding: 24px 0px;
+}
+
+/* Responsividade do Footer */
+
+@media (max-width: 375px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px 30px 20px;
+  }
+
+  #nome-marca {
+    font-weight: 600;
+    font-size: 24.46px;
+    line-height: 100%;
+    letter-spacing: -1%;
+  }
+
+  li a {
+    text-decoration: none;
+    white-space: nowrap; /*apliquei a propriedade para que os textos dentro dos links não quebrassem a linha automaticamente*/
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0%;
+  }
+  .div-container-footer {
+    width: 322.92px;
+    height: 660.78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 30%);
+  }
+
+  .div-logo-footer {
+    width: 170px;
+    height: 29.57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div-logo-footer img {
+    width: 22.17px;
+    height: 22.17px;
+  }
+
+  .div-logo-redes-sociais-footer {
+    width: 307px;
+    height: 166.31px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .div-links-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .div-informacao-footer {
+    width: 135px;
+    height: 218px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .div-categorias-footer {
+    width: 99px;
+    height: 187px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .div-contato-footer {
+    width: 281px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .div-conteudo-contato-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0px;
+  }
+}

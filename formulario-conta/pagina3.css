@@ -1,0 +1,492 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  
+}
+
+/* Estilo da página */
+body {
+  background-color: #f9f8ff;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+  padding-left: 120px;
+}
+
+header img {
+  height: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: -2rem;
+
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container-global {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Formulários */
+.formulario-1 {
+  background-color: white;
+ border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  width: 750px;
+}
+
+.formulario-1 p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #111;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 19px;
+  letter-spacing: 0.75px;
+}
+
+.formulario-2 {
+  background-color: white;
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px #474747(0, 0, 0, 0.03);
+  width: 750px;
+}
+
+.formulario-2 p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #111;
+  letter-spacing: 0.75px;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 19px;
+}
+
+.dados {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dados label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0.75px;
+}
+
+.dados input {
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: rgb(71, 71, 71, 4%);
+  font-size: 14px;
+  color: #666666;
+  outline: none;
+ 
+}
+
+.dados input::placeholder {
+  color: #aaa;
+  letter-spacing: 0.75px;
+}
+
+/* Checkbox */
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+
+  width: 100%;
+}
+
+.check input {
+  margin-top: 3px;
+  accent-color: #c92071;
+}
+
+/* Botão */
+.criar-conta {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.criar-conta button {
+  background-color: #c92071;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.criar-conta button:hover {
+  background-color: #c92071;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  
+}
+button {
+  width: 750px;
+}
+.check input[type="checkbox"] {
+  background-color: #c92071;
+  transform: scale(1.5);
+}
+
+.container-global h2 {
+  display: flex;
+  gap: 30px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container-global {
+    width: 90%;
+  }
+
+  .formulario-1 {
+    padding: 20px;
+  }
+
+  .dados {
+    width: 100%;
+  }
+
+  .dados input {
+    width: 100%;
+  }
+
+  .check {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 11px;
+    width: 100%;
+  }
+
+  .criar-conta button {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .formulario-1 p {
+    font-size: 13px;
+  }
+
+  .check {
+    font-size: 10px;
+  }
+
+  .criar-conta button {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 72px 100px 0px 100px;
+}
+
+.div-container-footer {
+  width: 1240px;
+  height: 312px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 30%);
+}
+
+#titulos-footer {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+/* seção logo do footer */
+
+.div-logo-redes-sociais-footer {
+  width: 307px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.div-links-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 102px;
+}
+
+.div-logo-footer {
+  width: 253px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.div-logo-footer img {
+  width: 33px;
+  height: 33px;
+}
+
+#nome-marca {
+  font-weight: 600;
+  font-size: 36.4px;
+  line-height: 100%;
+  letter-spacing: -1%;
+}
+
+.div-drescricao-marca-footer {
+  width: 307px;
+  height: 78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+.div-redes-sociais-footer {
+  width: 124.12px;
+  height: 20.53px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* seção links de informações */
+
+.div-informacao-footer {
+  width: 135px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+/* seção links de categorias */
+
+.div-categorias-footer {
+  width: 96px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+/* seção informações de contato */
+
+.div-contato-footer {
+  width: 233px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+.div-conteudo-contato-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.div-conteudo-contato-footer p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+/* estilização diretamente nas tags*/
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li a {
+  text-decoration: none;
+  white-space: nowrap; /*apliquei a propriedade para que os textos dentro dos links não quebrassem a linha automaticamente*/
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0%;
+}
+
+.copyright-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding: 24px 0px;
+}
+
+/* Responsividade do Footer */
+
+@media (max-width: 375px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px 30px 20px;
+  }
+
+  #nome-marca {
+    font-weight: 600;
+    font-size: 24.46px;
+    line-height: 100%;
+    letter-spacing: -1%;
+  }
+
+  li a {
+    text-decoration: none;
+    white-space: nowrap; /*apliquei a propriedade para que os textos dentro dos links não quebrassem a linha automaticamente*/
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0%;
+  }
+  .div-container-footer {
+    width: 322.92px;
+    height: 660.78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 30%);
+  }
+
+  .div-logo-footer {
+    width: 170px;
+    height: 29.57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div-logo-footer img {
+    width: 22.17px;
+    height: 22.17px;
+  }
+
+  .div-logo-redes-sociais-footer {
+    width: 307px;
+    height: 166.31px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .div-links-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .div-informacao-footer {
+    width: 135px;
+    height: 218px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .div-categorias-footer {
+    width: 99px;
+    height: 187px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .div-contato-footer {
+    width: 281px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .div-conteudo-contato-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0px;
+  }
+}
+
