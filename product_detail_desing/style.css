@@ -280,7 +280,7 @@ h3 {
   gap: 10px;
 }
 
-ul {
+.div-selecao-tamanhos ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -319,6 +319,13 @@ ul {
 .div-selecao-cores {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.div-lista-selecao-cores ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
   gap: 10px;
 }
 
